@@ -195,7 +195,9 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 gap-4">
           <p className="font-mono text-[10px] text-stone-500 uppercase tracking-widest text-center md:text-left">
-            © {currentYear} GreenHaven Welimada. All rights reserved.
+            <Link to="/admin/login" className="hover:text-stone-400 transition-colors cursor-default">
+              © {currentYear} GreenHaven Welimada.
+            </Link> All rights reserved.
           </p>
           <div className="flex items-center gap-2">
             <p className="font-mono text-[10px] text-stone-500 uppercase tracking-widest">
