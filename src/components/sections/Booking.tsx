@@ -143,8 +143,8 @@ export function Booking() {
                   Experience the quiet beauty of rural Sri Lanka. Our farm is designed for those seeking peace, authentic connections, and organic living.
                 </p>
                 <div className="mt-4 lg:mt-8 space-y-2 font-mono text-[10px] lg:text-xs tracking-widest uppercase text-white/70">
-                  <p className="flex items-center gap-2"><span className="w-4 h-[1px] bg-white/50"></span> +94 77 123 4567</p>
-                  <p className="flex items-center gap-2"><span className="w-4 h-[1px] bg-white/50"></span> hello@greenhaven.lk</p>
+                  <p className="flex items-center gap-2"><span className="w-4 h-[1px] bg-white/50"></span> +94 77 050 2830</p>
+                  <p className="flex items-center gap-2"><span className="w-4 h-[1px] bg-white/50"></span> admin@greenhaven.lk</p>
                 </div>
               </div>
             </div>
