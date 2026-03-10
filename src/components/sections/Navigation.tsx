@@ -57,7 +57,7 @@ export function Navigation() {
           rounded-full border border-forest-moss/10
           px-6 py-3 flex items-center justify-between
           transition-all duration-500 hidden md:flex
-          ${isScrolled ? 'w-[800px] max-w-[95%]' : 'w-[95%] max-w-5xl'}
+          ${isScrolled ? 'w-[900px] max-w-[95%]' : 'w-[85%] max-w-5xl'}
         `}>
 
         <div className="flex items-center">
