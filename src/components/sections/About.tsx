@@ -19,7 +19,7 @@ export function About() {
           Our Story
         </h2>
         <h3 className="font-serif text-4xl md:text-5xl lg:text-6xl text-forest-moss mb-6 font-bold">
-          The GreenHaven Welimada Concept
+          The greenheaven Welimada Concept
         </h3>
         <p className="font-sans text-xl text-forest-moss/80 max-w-2xl mx-auto leading-relaxed">
           Discover the intention behind every square foot of our sanctuary.

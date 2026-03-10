@@ -28,7 +28,7 @@ export function AdminLayout() {
       <aside className="w-full md:w-64 bg-forest-black text-white flex flex-col border-r border-white/10 shrink-0 shadow-2xl z-20 md:h-screen md:sticky md:top-0">
         <div className="p-6 border-b border-white/10">
           <h2 className="font-serif text-2xl text-sage-green">Admin Portal</h2>
-          <p className="font-mono text-[10px] tracking-[0.2em] text-white/50 uppercase mt-1">GreenHaven Welimada</p>
+          <p className="font-mono text-[10px] tracking-[0.2em] text-white/50 uppercase mt-1">greenheaven Welimada</p>
         </div>
 
         <nav className="flex-1 p-4 space-y-2 overflow-y-auto">

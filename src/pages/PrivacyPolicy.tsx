@@ -20,7 +20,7 @@ export function PrivacyPolicy() {
             <section>
               <h2 className="font-serif text-2xl text-forest-moss mb-4">1. Introduction</h2>
               <p>
-                Welcome to GreenHaven Welimada. We respect your privacy and are committed to protecting your personal data.
+                Welcome to greenheaven Welimada. We respect your privacy and are committed to protecting your personal data.
                 This privacy policy will inform you as to how we look after your personal data when you visit our website
                 and tell you about your privacy rights.
               </p>

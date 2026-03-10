@@ -53,8 +53,8 @@ export function Footer() {
           {/* Column 1: Brand & Mission (Spans 4 columns) */}
           <div className="lg:col-span-4 pr-0 lg:pr-8">
             <h2 className="font-serif text-3xl text-golden-amber mb-6 flex items-center gap-3">
-              <Leaf className="text-sage-green" size={24} />
-              GreenHaven
+              <img src="https://mgfwijircgytueryzkyw.supabase.co/storage/v1/object/public/images/1.svg" alt="greenheaven logo" className="h-10 w-auto" />
+              Green Heaven Welimada
             </h2>
             <p className="font-sans text-stone-300 leading-relaxed mb-8 max-w-sm">
               An organic sanctuary hidden in the lush hills of Welimada, Sri Lanka.
@@ -196,7 +196,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 gap-4">
           <p className="font-mono text-[10px] text-stone-500 uppercase tracking-widest text-center md:text-left">
             <Link to="/admin/login" className="hover:text-stone-400 transition-colors cursor-default">
-              © {currentYear} GreenHaven Welimada.
+              © {currentYear} GreenHeaven Welimada.
             </Link> All rights reserved.
           </p>
           <div className="flex items-center gap-2">

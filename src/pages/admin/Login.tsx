@@ -39,7 +39,7 @@ export function Login() {
       >
         <div className="text-center mb-8">
           <h2 className="font-serif text-3xl text-sage-green mb-2">Admin Portal</h2>
-          <p className="font-mono text-xs tracking-widest text-white/50 uppercase">GreenHaven Welimada</p>
+          <p className="font-mono text-xs tracking-widest text-white/50 uppercase">greenheaven Welimada</p>
         </div>
 
         {error && <div className="mb-4 p-3 rounded-lg bg-red-500/10 border border-red-500/50 text-red-500 text-sm font-mono">{error}</div>}

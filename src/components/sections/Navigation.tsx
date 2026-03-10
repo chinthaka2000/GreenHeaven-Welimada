@@ -61,8 +61,11 @@ export function Navigation() {
         `}>
 
         <div className="flex items-center">
-          <Link to="/" className="font-serif font-bold text-xl bg-gradient-to-r from-forest-moss to-sage-green bg-clip-text text-transparent whitespace-nowrap">
-            GreenHaven Welimada
+          <Link to="/" className="flex flex-row items-center gap-2">
+            <img src="https://mgfwijircgytueryzkyw.supabase.co/storage/v1/object/public/images/1.svg" alt="greenheaven logo" className="h-8 w-auto" />
+            <span className="font-serif font-bold text-xl bg-gradient-to-r from-forest-moss to-sage-green bg-clip-text text-transparent whitespace-nowrap">
+              GreenHeaven Welimada
+            </span>
           </Link>
         </div>
 
@@ -95,8 +98,11 @@ export function Navigation() {
 
       {/* Mobile Nav */}
       <div className="md:hidden fixed top-4 left-4 right-4 z-50 flex justify-between items-center">
-        <Link to="/" className="font-serif font-bold text-xl bg-gradient-to-r from-cream-mist to-golden-amber bg-clip-text text-transparent drop-shadow-lg">
-          GreenHaven Welimada
+        <Link to="/" className="flex flex-row items-center gap-2">
+          <img src="https://mgfwijircgytueryzkyw.supabase.co/storage/v1/object/public/images/1.svg" alt="greenheaven logo" className="h-8 w-auto drop-shadow-lg" />
+          <span className="font-serif font-bold text-xl bg-gradient-to-r from-cream-mist to-golden-amber bg-clip-text text-transparent drop-shadow-lg">
+            GreenHeaven Welimada
+          </span>
         </Link>
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

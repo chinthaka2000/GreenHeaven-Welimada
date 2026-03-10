@@ -36,7 +36,7 @@ export function BlogPage() {
             Stories from the Soil
           </h2>
           <p className="font-sans text-xl text-cream-mist/70 max-w-2xl mx-auto leading-relaxed">
-            Read about our latest harvests, sustainable farming techniques, and life at GreenHaven Welimada.
+            Read about our latest harvests, sustainable farming techniques, and life at greenheaven Welimada.
           </p>
         </div>
 
@@ -66,7 +66,7 @@ export function BlogPage() {
                     </div>
                   ) : (
                     <div className="w-full h-64 bg-sage-green/10 flex items-center justify-center">
-                      <span className="font-serif text-sage-green/50 italic">GreenHaven</span>
+                      <span className="font-serif text-sage-green/50 italic">greenheaven</span>
                     </div>
                   )}
 

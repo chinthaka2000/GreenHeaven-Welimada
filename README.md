@@ -1,8 +1,8 @@
-# GreenHaven Welimada - Agro-Tourism Web Application
+# greenheaven Welimada - Agro-Tourism Web Application
 
 **Live Demo**: [https://greenheaven-welimada.onrender.com](https://greenheaven-welimada.onrender.com)
 
-GreenHaven Welimada is a premium, responsive Single Page Application (SPA) designed for an eco-tourism sanctuary in the lush hills of Welimada, Sri Lanka. The platform provides users with a seamless, immersive experience to explore farm retreats, accommodations, and local experiences while maintaining high performance and modern aesthetics.
+greenheaven Welimada is a premium, responsive Single Page Application (SPA) designed for an eco-tourism sanctuary in the lush hills of Welimada, Sri Lanka. The platform provides users with a seamless, immersive experience to explore farm retreats, accommodations, and local experiences while maintaining high performance and modern aesthetics.
 
 ## Key Features
 - **Modern UI/UX**: Designed to convey a calm, natural, and premium "earthy" vibe, featuring smooth animations and a refined typography system.

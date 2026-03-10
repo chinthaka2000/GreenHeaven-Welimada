@@ -133,7 +133,7 @@ export function Booking() {
             <div className="block lg:col-span-2 relative min-h-[250px] lg:min-h-0">
               <img
                 src="/images/hero_landscape.png"
-                alt="GreenHaven Farm Landscape"
+                alt="greenheaven Farm Landscape"
                 className="absolute inset-0 w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-forest-moss/95 via-forest-moss/40 to-transparent"></div>

@@ -20,7 +20,7 @@ export function TermsOfService() {
             <section>
               <h2 className="font-serif text-2xl text-forest-moss mb-4">1. Agreement to Terms</h2>
               <p>
-                These Terms of Service constitute a legally binding agreement made between you and GreenHaven Welimada concerning your access to and use of our website as well as any other media form related, linked, or otherwise connected thereto. You agree that by accessing the site, you have read, understood, and agreed to be bound by all of these Terms of Service.
+                These Terms of Service constitute a legally binding agreement made between you and greenheaven Welimada concerning your access to and use of our website as well as any other media form related, linked, or otherwise connected thereto. You agree that by accessing the site, you have read, understood, and agreed to be bound by all of these Terms of Service.
               </p>
             </section>
 

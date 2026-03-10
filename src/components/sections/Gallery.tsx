@@ -23,7 +23,7 @@ export function Gallery() {
           Life on the Farm
         </h3>
         <p className="font-sans text-xl text-forest-moss/80 leading-relaxed">
-          Take a deeper look into the daily rhythms of GreenHaven Welimada. Interact with the gallery to explore our sanctuary from misty mornings to vibrant harvests.
+          Take a deeper look into the daily rhythms of greenheaven Welimada. Interact with the gallery to explore our sanctuary from misty mornings to vibrant harvests.
         </p>
       </div>
 
