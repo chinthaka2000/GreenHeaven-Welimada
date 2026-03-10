@@ -55,21 +55,21 @@ export function Navigation() {
         className={`
           fixed top-6 left-1/2 -translate-x-1/2 z-50
           rounded-full border border-forest-moss/10
-          px-6 py-3 flex items-center justify-between
+          px-4 lg:px-6 py-3 flex items-center justify-between
           transition-all duration-500 hidden md:flex
-          ${isScrolled ? 'w-[900px] max-w-[95%]' : 'w-[85%] max-w-5xl'}
+          ${isScrolled ? 'w-[95%] lg:w-[850px] xl:w-[1000px]' : 'w-[95%] max-w-6xl'}
         `}>
 
-        <div className="flex items-center">
+        <div className="flex items-center shrink-0">
           <Link to="/" className="flex flex-row items-center gap-2">
             <img src="https://mgfwijircgytueryzkyw.supabase.co/storage/v1/object/public/images/1.svg" alt="greenheaven logo" className="h-8 w-auto" />
-            <span className="font-serif font-bold text-xl bg-gradient-to-r from-forest-moss to-sage-green bg-clip-text text-transparent whitespace-nowrap">
+            <span className={`font-serif font-bold text-xl lg:text-lg xl:text-xl bg-gradient-to-r from-forest-moss to-sage-green bg-clip-text text-transparent whitespace-nowrap transition-all duration-500 ${isScrolled ? 'hidden xl:block' : 'hidden lg:block'}`}>
               GreenHeaven Welimada
             </span>
           </Link>
         </div>
 
-        <div className="flex items-center space-x-8">
+        <div className="flex items-center space-x-3 lg:space-x-6 xl:space-x-8">
           {links.map((link) =>
             <Link
               key={link.name}
@@ -90,7 +90,7 @@ export function Navigation() {
           whileTap={{
             scale: 0.95
           }}
-          className="px-5 py-2 rounded-full bg-white/5 border border-golden-amber/50 text-golden-amber font-mono text-xs tracking-widest uppercase hover:bg-golden-amber/10 transition-colors">
+          className="px-4 lg:px-5 py-2 rounded-full bg-white/5 border border-golden-amber/50 text-golden-amber font-mono text-[10px] lg:text-xs tracking-widest uppercase hover:bg-golden-amber/10 transition-colors shrink-0 whitespace-nowrap">
 
           Book Now
         </motion.button>
