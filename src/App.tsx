@@ -25,44 +25,48 @@ import { EditAbout } from './pages/admin/EditAbout';
 import { EditGallery } from './pages/admin/EditGallery';
 import { BookingList } from './pages/admin/BookingList';
 
+import { HelmetProvider } from 'react-helmet-async';
+
 export function App() {
   return (
-    <AuthProvider>
-      <BrowserRouter>
-        <Routes>
-          {/* Public Website Routes */}
-          <Route path="/" element={<RootLayout />}>
-            <Route index element={<Home />} />
-            <Route path="about" element={<AboutPage />} />
-            <Route path="experiences" element={<ExperiencesPage />} />
-            <Route path="experiences/:slug" element={<ExperienceDetailsPage />} />
-            <Route path="accommodations" element={<AccommodationsPage />} />
-            <Route path="privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="terms-of-service" element={<TermsOfService />} />
-            <Route path="blog" element={<BlogPage />} />
-            <Route path="blog/:slug" element={<BlogPostPage />} />
-          </Route>
+    <HelmetProvider>
+      <AuthProvider>
+        <BrowserRouter>
+          <Routes>
+            {/* Public Website Routes */}
+            <Route path="/" element={<RootLayout />}>
+              <Route index element={<Home />} />
+              <Route path="about" element={<AboutPage />} />
+              <Route path="experiences" element={<ExperiencesPage />} />
+              <Route path="experiences/:slug" element={<ExperienceDetailsPage />} />
+              <Route path="accommodations" element={<AccommodationsPage />} />
+              <Route path="privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="terms-of-service" element={<TermsOfService />} />
+              <Route path="blog" element={<BlogPage />} />
+              <Route path="blog/:slug" element={<BlogPostPage />} />
+            </Route>
 
-          {/* Admin Routes */}
-          <Route path="/admin/login" element={<Login />} />
-          <Route path="/admin" element={
-            <ProtectedRoute>
-              <AdminLayout />
-            </ProtectedRoute>
-          }>
-            <Route index element={<Dashboard />} />
-            <Route path="experiences" element={<ExperienceList />} />
-            <Route path="experiences/new" element={<EditExperience />} />
-            <Route path="experiences/edit/:id" element={<EditExperience />} />
-            <Route path="bookings" element={<BookingList />} />
-            <Route path="blog" element={<BlogList />} />
-            <Route path="blog/:id" element={<EditBlog />} />
-            <Route path="hero" element={<EditHero />} />
-            <Route path="about" element={<EditAbout />} />
-            <Route path="gallery" element={<EditGallery />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </AuthProvider>
+            {/* Admin Routes */}
+            <Route path="/admin/login" element={<Login />} />
+            <Route path="/admin" element={
+              <ProtectedRoute>
+                <AdminLayout />
+              </ProtectedRoute>
+            }>
+              <Route index element={<Dashboard />} />
+              <Route path="experiences" element={<ExperienceList />} />
+              <Route path="experiences/new" element={<EditExperience />} />
+              <Route path="experiences/edit/:id" element={<EditExperience />} />
+              <Route path="bookings" element={<BookingList />} />
+              <Route path="blog" element={<BlogList />} />
+              <Route path="blog/:id" element={<EditBlog />} />
+              <Route path="hero" element={<EditHero />} />
+              <Route path="about" element={<EditAbout />} />
+              <Route path="gallery" element={<EditGallery />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </AuthProvider>
+    </HelmetProvider>
   );
 }

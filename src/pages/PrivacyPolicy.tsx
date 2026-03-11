@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Navigation } from '../components/sections/Navigation';
 import { Footer } from '../components/sections/Footer';
+import { SEO } from '../components/SEO';
 
 export function PrivacyPolicy() {
   useEffect(() => {
@@ -8,7 +9,13 @@ export function PrivacyPolicy() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-stone-50 font-sans selection:bg-sage-green/30 flex flex-col">
+    <>
+      <SEO 
+        title="Privacy Policy | Green Heaven Welimada" 
+        description="Privacy Policy for Green Heaven Welimada. Read about how we collect, use, and protect your personal data." 
+        url="https://greenheaven.lk/privacy-policy"
+      />
+      <div className="min-h-screen bg-stone-50 font-sans selection:bg-sage-green/30 flex flex-col">
       <Navigation />
 
       <main className="flex-1 pt-32 pb-24 px-6">
@@ -74,5 +81,6 @@ export function PrivacyPolicy() {
 
       <Footer />
     </div>
+    </>
   );
 }

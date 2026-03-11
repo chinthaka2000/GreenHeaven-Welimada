@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Navigation } from '../components/sections/Navigation';
 import { Footer } from '../components/sections/Footer';
+import { SEO } from '../components/SEO';
 
 export function TermsOfService() {
   useEffect(() => {
@@ -8,7 +9,13 @@ export function TermsOfService() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-stone-50 font-sans selection:bg-sage-green/30 flex flex-col">
+    <>
+      <SEO 
+        title="Terms of Service | Green Heaven Welimada" 
+        description="Terms of Service for Green Heaven Welimada. Please read these terms carefully before booking or using our website." 
+        url="https://greenheaven.lk/terms-of-service"
+      />
+      <div className="min-h-screen bg-stone-50 font-sans selection:bg-sage-green/30 flex flex-col">
       <Navigation />
 
       <main className="flex-1 pt-32 pb-24 px-6">
@@ -72,5 +79,6 @@ export function TermsOfService() {
 
       <Footer />
     </div>
+    </>
   );
 }

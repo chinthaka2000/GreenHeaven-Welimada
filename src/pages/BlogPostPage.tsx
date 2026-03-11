@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
 // @ts-ignore
 import DOMPurify from 'dompurify';
+import { SEO } from '../components/SEO';
 
 export function BlogPostPage() {
   const { slug } = useParams();
@@ -49,7 +50,15 @@ export function BlogPostPage() {
   }
 
   return (
-    <div className="min-h-screen bg-forest-black pt-32 pb-24">
+    <>
+      <SEO 
+        title={`${post.title} | Green Heaven Welimada`}
+        description={post.excerpt || 'Read our latest story from Green Heaven Welimada.'}
+        url={`https://greenheaven.lk/blog/${slug}`}
+        type="article"
+        image={post.image_url || 'https://greenheaven.lk/og-image.jpg'}
+      />
+      <div className="min-h-screen bg-forest-black pt-32 pb-24">
       <article className="max-w-4xl mx-auto px-4">
         <Link to="/blog" className="inline-flex items-center gap-2 text-sage-green/70 hover:text-sage-green mb-12 font-mono text-sm uppercase tracking-widest transition-colors">
           <ArrowLeft size={16} /> Back to Journal
@@ -93,5 +102,6 @@ export function BlogPostPage() {
         </motion.div>
       </article>
     </div>
+    </>
   );
 }

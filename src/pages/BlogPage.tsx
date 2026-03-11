@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { supabase } from '../lib/supabase';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { SEO } from '../components/SEO';
 
 export function BlogPage() {
   const [posts, setPosts] = useState<any[]>([]);
@@ -26,7 +27,13 @@ export function BlogPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-forest-black pt-32 pb-24 px-4">
+    <>
+      <SEO 
+        title="Farm Journal & Stories | Green Heaven Welimada" 
+        description="Read about our latest harvests, sustainable farming techniques, and life at Green Heaven Welimada." 
+        url="https://greenheaven.lk/blog"
+      />
+      <div className="min-h-screen bg-forest-black pt-32 pb-24 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="font-mono text-sage-green text-sm tracking-[0.3em] uppercase mb-4 font-bold">
@@ -36,7 +43,7 @@ export function BlogPage() {
             Stories from the Soil
           </h2>
           <p className="font-sans text-xl text-cream-mist/70 max-w-2xl mx-auto leading-relaxed">
-            Read about our latest harvests, sustainable farming techniques, and life at greenheaven Welimada.
+            Read about our latest harvests, sustainable farming techniques, and life at GreenHeaven Welimada.
           </p>
         </div>
 
@@ -66,7 +73,7 @@ export function BlogPage() {
                     </div>
                   ) : (
                     <div className="w-full h-64 bg-sage-green/10 flex items-center justify-center">
-                      <span className="font-serif text-sage-green/50 italic">greenheaven</span>
+                      <span className="font-serif text-sage-green/50 italic">greenHeaven</span>
                     </div>
                   )}
 
@@ -92,5 +99,6 @@ export function BlogPage() {
         )}
       </div>
     </div>
+    </>
   );
 }
