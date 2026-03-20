@@ -15,10 +15,11 @@ export function ExperienceDetailsPage() {
 
   useEffect(() => {
     const fetchExperience = async () => {
+      const cleanSlug = slug?.replace(/[\/#?]+$/, '').trim();
       const { data, error } = await supabase
         .from('experiences')
         .select('*')
-        .eq('slug', slug)
+        .eq('slug', cleanSlug)
         .single();
 
       if (!error && data) {

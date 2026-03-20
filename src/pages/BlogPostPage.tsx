@@ -14,10 +14,11 @@ export function BlogPostPage() {
 
   useEffect(() => {
     const fetchPost = async () => {
+      const cleanSlug = slug?.replace(/[\/#?]+$/, '').trim();
       const { data, error } = await supabase
         .from('blog_posts')
         .select('*')
-        .eq('slug', slug)
+        .eq('slug', cleanSlug)
         .eq('published', true)
         .single();
 
