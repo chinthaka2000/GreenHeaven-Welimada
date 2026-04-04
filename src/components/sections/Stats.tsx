@@ -4,8 +4,8 @@ import { statsData as stats } from '../../data/siteData';
 
 export function Stats() {
   return (
-    <div className="relative z-20 -mt-20 px-4 max-w-7xl mx-auto">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div className="relative z-20 -mt-16 md:-mt-24 px-4 max-w-3xl mx-auto">
+      <div className="grid grid-cols-2 gap-4 md:gap-8">
         {stats.map((stat, index) =>
           <GlassCard
             key={index}

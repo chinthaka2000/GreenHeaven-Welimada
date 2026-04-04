@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet, Link, useNavigate, useLocation } from 'react-router-dom';
 import { supabase } from '../lib/supabase';
-import { LogOut, Home, Image, FileText, LayoutTemplate, PenTool, Tent, Calendar } from 'lucide-react';
+import { LogOut, Home, Image, FileText, LayoutTemplate, PenTool, Tent, Calendar, Settings } from 'lucide-react';
 
 export function AdminLayout() {
   const navigate = useNavigate();
@@ -20,6 +20,7 @@ export function AdminLayout() {
     { label: 'Hero Section', path: '/admin/hero', icon: LayoutTemplate },
     { label: 'About Stories', path: '/admin/about', icon: FileText },
     { label: 'Gallery Items', path: '/admin/gallery', icon: Image },
+    { label: 'Site Settings', path: '/admin/settings', icon: Settings },
   ];
 
   return (

@@ -92,16 +92,6 @@ export const testimonialsData = [
 
 export const statsData = [
   {
-    value: '47',
-    label: 'Acres of Land',
-    suffix: ''
-  },
-  {
-    value: '200',
-    label: 'Happy Guests',
-    suffix: '+'
-  },
-  {
     value: '12',
     label: 'Seasonal Crops',
     suffix: ''

@@ -24,6 +24,7 @@ import { EditHero } from './pages/admin/EditHero';
 import { EditAbout } from './pages/admin/EditAbout';
 import { EditGallery } from './pages/admin/EditGallery';
 import { BookingList } from './pages/admin/BookingList';
+import { EditSettings } from './pages/admin/EditSettings';
 
 import { HelmetProvider } from 'react-helmet-async';
 
@@ -55,14 +56,14 @@ export function App() {
             }>
               <Route index element={<Dashboard />} />
               <Route path="experiences" element={<ExperienceList />} />
-              <Route path="experiences/new" element={<EditExperience />} />
-              <Route path="experiences/edit/:id" element={<EditExperience />} />
+              <Route path="experiences/:id" element={<EditExperience />} />
               <Route path="bookings" element={<BookingList />} />
               <Route path="blog" element={<BlogList />} />
               <Route path="blog/:id" element={<EditBlog />} />
               <Route path="hero" element={<EditHero />} />
               <Route path="about" element={<EditAbout />} />
               <Route path="gallery" element={<EditGallery />} />
+              <Route path="settings" element={<EditSettings />} />
             </Route>
           </Routes>
         </BrowserRouter>
