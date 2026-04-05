@@ -35,9 +35,11 @@ export function Accommodations() {
       <div className="relative">
         {openingSoon && (
           <div className="absolute inset-0 z-30 flex items-center justify-center pointer-events-none">
-            <div className="bg-forest-black/80 backdrop-blur-sm text-white px-12 py-8 rounded-[30px] border border-white/20 shadow-2xl transform -translate-y-12">
-              <h4 className="font-serif text-4xl md:text-5xl mb-4 text-center">Opening Soon</h4>
-              <p className="font-sans font-medium text-white/80 tracking-widest uppercase text-sm text-center">
+            <div className="bg-white/90 backdrop-blur-md px-16 py-10 rounded-[40px] border border-sage-green/20 shadow-2xl transform -translate-y-12">
+              <h4 className="font-serif text-5xl md:text-6xl mb-4 text-center bg-gradient-to-r from-forest-moss to-sage-green bg-clip-text text-transparent drop-shadow-sm">
+                Opening Soon
+              </h4>
+              <p className="font-sans font-bold tracking-[0.2em] uppercase text-sm text-center text-forest-moss/70">
                 We are crafting your perfect stay
               </p>
             </div>
